@@ -1,7 +1,5 @@
 docker run -it --name=giraph -p 9000:9000 -v $(pwd)/data:/data cithub/giraph
-./home/hadoop/hadoop/start.sh
-
-chown -R .hadoop /data
+# following inside giraph container
 ./home/hadoop/hadoop/start.sh
 hdfs dfs -mkdir /tmp
 cd /data/giraph
